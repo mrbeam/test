@@ -1,1 +1,1 @@
-SOME_CODE = ""
+SOME_CODE = "abc"
