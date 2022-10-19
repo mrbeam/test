@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - alpha
+      - beta
+      - stable
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+
+jobs:
+  build:
+    uses: mrbeam/mrb-workflows/.github/workflows/build.yml@feature/SW-1335-github-actions-evaluate-code-against-last-release
+    secrets: inherit
