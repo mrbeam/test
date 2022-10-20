@@ -12,3 +12,5 @@ jobs:
   build:
     uses: mrbeam/mrb-workflows/.github/workflows/build.yml@feature/SW-1965-cleanup-sonarcloud-config-files
     secrets: inherit
+    with:
+      source_dir: src
